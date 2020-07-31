@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>830948043138-i6k2mtl1c8q41fuktku5p7vt3o9jnrem.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.830948043138-i6k2mtl1c8q41fuktku5p7vt3o9jnrem</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDs7BjkSjoDcqy0AikHCZPlY4uq1I5WQLA</string>
+	<key>GCM_SENDER_ID</key>
+	<string>830948043138</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>LSDS.Messenger</string>
+	<key>PROJECT_ID</key>
+	<string>petmessenger-21577</string>
+	<key>STORAGE_BUCKET</key>
+	<string>petmessenger-21577.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:830948043138:ios:045a632859671ee47bc79b</string>
+	<key>DATABASE_URL</key>
+	<string>https://petmessenger-21577.firebaseio.com</string>
+</dict>
+</plist>
