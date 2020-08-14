@@ -1,14 +1,14 @@
 //
-//  RegistrationViewController.swift
+//  LoginViewController.swift
 //  Messenger
 //
-//  Created by Леонид on 31.07.2020.
+//  Created by Леонид on 14.08.2020.
 //  Copyright © 2020 LSDevStudy. All rights reserved.
 //
 
 import UIKit
 
-class RegistrationViewController: UIViewController {
+class LoginViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

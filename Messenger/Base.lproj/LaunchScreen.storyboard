@@ -24,15 +24,10 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="Xse-kf-Of3">
-                                <rect key="frame" x="197" y="476" width="20" height="20"/>
-                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemGray4Color" red="0.81960784310000001" green="0.81960784310000001" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Xse-kf-Of3" firstAttribute="top" secondItem="57r-CV-4Vg" secondAttribute="bottom" constant="8" id="JdT-6A-sea"/>
                             <constraint firstItem="57r-CV-4Vg" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="aDL-bg-yDs"/>
-                            <constraint firstItem="Xse-kf-Of3" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="gjA-Ww-bvA"/>
                             <constraint firstItem="57r-CV-4Vg" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="gxT-M4-Vlv"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
