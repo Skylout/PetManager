@@ -10,6 +10,7 @@
 		17292B13EF8E54E539EBBB03 /* Pods_Messenger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52F7E9B9EFEBD64ED268E4D4 /* Pods_Messenger.framework */; };
 		B341900A24E718D400823790 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B341900924E718D400823790 /* LoginViewController.swift */; };
 		B341900E24E71B6400823790 /* AuthentificationServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = B341900D24E71B6400823790 /* AuthentificationServices.swift */; };
+		B341901224E7482500823790 /* Validators.swift in Sources */ = {isa = PBXBuildFile; fileRef = B341901124E7482500823790 /* Validators.swift */; };
 		B35ABA0A24D4D2320046B1C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35ABA0924D4D2320046B1C2 /* AppDelegate.swift */; };
 		B35ABA0C24D4D2320046B1C2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35ABA0B24D4D2320046B1C2 /* SceneDelegate.swift */; };
 		B35ABA0E24D4D2320046B1C2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35ABA0D24D4D2320046B1C2 /* ViewController.swift */; };
@@ -18,12 +19,16 @@
 		B35ABA1624D4D2350046B1C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B35ABA1424D4D2350046B1C2 /* LaunchScreen.storyboard */; };
 		B35ABA1E24D4D82B0046B1C2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B35ABA1D24D4D82B0046B1C2 /* GoogleService-Info.plist */; };
 		B362782F24D4E883009B0CE7 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B362782E24D4E883009B0CE7 /* RegistrationViewController.swift */; };
+		B381E81824EDE4DB001AC878 /* FirestoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B381E81724EDE4DB001AC878 /* FirestoreService.swift */; };
+		B381E81A24EDEE2C001AC878 /* MUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B381E81924EDEE2C001AC878 /* MUser.swift */; };
+		B38B3B5F24EC9AC300CA7AD8 /* AuthErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38B3B5E24EC9AC300CA7AD8 /* AuthErrors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		52F7E9B9EFEBD64ED268E4D4 /* Pods_Messenger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Messenger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B341900924E718D400823790 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B341900D24E71B6400823790 /* AuthentificationServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthentificationServices.swift; sourceTree = "<group>"; };
+		B341901124E7482500823790 /* Validators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validators.swift; sourceTree = "<group>"; };
 		B35ABA0624D4D2320046B1C2 /* Messenger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Messenger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B35ABA0924D4D2320046B1C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B35ABA0B24D4D2320046B1C2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -34,6 +39,9 @@
 		B35ABA1724D4D2350046B1C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B35ABA1D24D4D82B0046B1C2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B362782E24D4E883009B0CE7 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		B381E81724EDE4DB001AC878 /* FirestoreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreService.swift; sourceTree = "<group>"; };
+		B381E81924EDEE2C001AC878 /* MUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MUser.swift; sourceTree = "<group>"; };
+		B38B3B5E24EC9AC300CA7AD8 /* AuthErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthErrors.swift; sourceTree = "<group>"; };
 		DEACC253520E72EBD775A65C /* Pods-Messenger.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Messenger.debug.xcconfig"; path = "Target Support Files/Pods-Messenger/Pods-Messenger.debug.xcconfig"; sourceTree = "<group>"; };
 		E2FCE08827C6530D6486C5AE /* Pods-Messenger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Messenger.release.xcconfig"; path = "Target Support Files/Pods-Messenger/Pods-Messenger.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -72,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				B341900D24E71B6400823790 /* AuthentificationServices.swift */,
+				B381E81724EDE4DB001AC878 /* FirestoreService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -101,6 +110,8 @@
 				B35ABA0B24D4D2320046B1C2 /* SceneDelegate.swift */,
 				B341900C24E71B3D00823790 /* Services */,
 				B341900B24E71B2200823790 /* VC */,
+				B381E81B24EDEF56001AC878 /* Models */,
+				B38B3B6024ECA40D00CA7AD8 /* Helpers */,
 				B35ABA0F24D4D2320046B1C2 /* Main.storyboard */,
 				B35ABA1224D4D2350046B1C2 /* Assets.xcassets */,
 				B35ABA1424D4D2350046B1C2 /* LaunchScreen.storyboard */,
@@ -108,6 +119,23 @@
 				B35ABA1D24D4D82B0046B1C2 /* GoogleService-Info.plist */,
 			);
 			path = Messenger;
+			sourceTree = "<group>";
+		};
+		B381E81B24EDEF56001AC878 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B381E81924EDEE2C001AC878 /* MUser.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B38B3B6024ECA40D00CA7AD8 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				B341901124E7482500823790 /* Validators.swift */,
+				B38B3B5E24EC9AC300CA7AD8 /* AuthErrors.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		E02C8E4733547793F0E940C4 /* Pods */ = {
@@ -254,10 +282,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				B35ABA0E24D4D2320046B1C2 /* ViewController.swift in Sources */,
+				B341901224E7482500823790 /* Validators.swift in Sources */,
+				B38B3B5F24EC9AC300CA7AD8 /* AuthErrors.swift in Sources */,
 				B35ABA0A24D4D2320046B1C2 /* AppDelegate.swift in Sources */,
 				B362782F24D4E883009B0CE7 /* RegistrationViewController.swift in Sources */,
 				B341900A24E718D400823790 /* LoginViewController.swift in Sources */,
 				B341900E24E71B6400823790 /* AuthentificationServices.swift in Sources */,
+				B381E81824EDE4DB001AC878 /* FirestoreService.swift in Sources */,
+				B381E81A24EDEE2C001AC878 /* MUser.swift in Sources */,
 				B35ABA0C24D4D2320046B1C2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
