@@ -7,10 +7,36 @@
 //
 
 import UIKit
+import FirebaseFirestore
 
 struct MUser: Hashable, Decodable {
     var username: String
-    var id: Int
+    var email: String
+    var id: String
+    
+    init (username: String, email: String, id: String) {
+        self.username = username
+        self.email = email
+        self.id = id
+    }
+    
+    init?(document: DocumentSnapshot) {
+        guard let data = document.data() else { return nil }
+        guard let username = data["username"] as? String,
+        let email = data["email"] as? String,
+        let id = data["uid"] as? String else { return nil }
+        
+        self.username = username
+        self.email = email
+        self.id = id
+    }
+    
+    var representation: [String: Any] {
+        var rep = ["username":username]
+        rep["email"] = email
+        rep["uid"] = id
+        return rep
+    }
     
     func hash(into hasher: inout Hasher){
         hasher.combine(id)

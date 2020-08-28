@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		17292B13EF8E54E539EBBB03 /* Pods_Messenger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52F7E9B9EFEBD64ED268E4D4 /* Pods_Messenger.framework */; };
+		B3315BE224F1F578001CF49B /* ChatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3315BE124F1F578001CF49B /* ChatsViewController.swift */; };
 		B341900A24E718D400823790 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B341900924E718D400823790 /* LoginViewController.swift */; };
 		B341900E24E71B6400823790 /* AuthentificationServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = B341900D24E71B6400823790 /* AuthentificationServices.swift */; };
 		B341901224E7482500823790 /* Validators.swift in Sources */ = {isa = PBXBuildFile; fileRef = B341901124E7482500823790 /* Validators.swift */; };
 		B35ABA0A24D4D2320046B1C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35ABA0924D4D2320046B1C2 /* AppDelegate.swift */; };
 		B35ABA0C24D4D2320046B1C2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35ABA0B24D4D2320046B1C2 /* SceneDelegate.swift */; };
-		B35ABA0E24D4D2320046B1C2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35ABA0D24D4D2320046B1C2 /* ViewController.swift */; };
+		B35ABA0E24D4D2320046B1C2 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35ABA0D24D4D2320046B1C2 /* AuthViewController.swift */; };
 		B35ABA1124D4D2320046B1C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B35ABA0F24D4D2320046B1C2 /* Main.storyboard */; };
 		B35ABA1324D4D2350046B1C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B35ABA1224D4D2350046B1C2 /* Assets.xcassets */; };
 		B35ABA1624D4D2350046B1C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B35ABA1424D4D2350046B1C2 /* LaunchScreen.storyboard */; };
@@ -26,13 +27,14 @@
 
 /* Begin PBXFileReference section */
 		52F7E9B9EFEBD64ED268E4D4 /* Pods_Messenger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Messenger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3315BE124F1F578001CF49B /* ChatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsViewController.swift; sourceTree = "<group>"; };
 		B341900924E718D400823790 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B341900D24E71B6400823790 /* AuthentificationServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthentificationServices.swift; sourceTree = "<group>"; };
 		B341901124E7482500823790 /* Validators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validators.swift; sourceTree = "<group>"; };
 		B35ABA0624D4D2320046B1C2 /* Messenger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Messenger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B35ABA0924D4D2320046B1C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B35ABA0B24D4D2320046B1C2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B35ABA0D24D4D2320046B1C2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B35ABA0D24D4D2320046B1C2 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		B35ABA1024D4D2320046B1C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B35ABA1224D4D2350046B1C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B35ABA1524D4D2350046B1C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -69,9 +71,10 @@
 		B341900B24E71B2200823790 /* VC */ = {
 			isa = PBXGroup;
 			children = (
-				B35ABA0D24D4D2320046B1C2 /* ViewController.swift */,
+				B35ABA0D24D4D2320046B1C2 /* AuthViewController.swift */,
 				B362782E24D4E883009B0CE7 /* RegistrationViewController.swift */,
 				B341900924E718D400823790 /* LoginViewController.swift */,
+				B3315BE124F1F578001CF49B /* ChatsViewController.swift */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -281,12 +284,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B35ABA0E24D4D2320046B1C2 /* ViewController.swift in Sources */,
+				B35ABA0E24D4D2320046B1C2 /* AuthViewController.swift in Sources */,
 				B341901224E7482500823790 /* Validators.swift in Sources */,
 				B38B3B5F24EC9AC300CA7AD8 /* AuthErrors.swift in Sources */,
 				B35ABA0A24D4D2320046B1C2 /* AppDelegate.swift in Sources */,
 				B362782F24D4E883009B0CE7 /* RegistrationViewController.swift in Sources */,
 				B341900A24E718D400823790 /* LoginViewController.swift in Sources */,
+				B3315BE224F1F578001CF49B /* ChatsViewController.swift in Sources */,
 				B341900E24E71B6400823790 /* AuthentificationServices.swift in Sources */,
 				B381E81824EDE4DB001AC878 /* FirestoreService.swift in Sources */,
 				B381E81A24EDEE2C001AC878 /* MUser.swift in Sources */,

@@ -7,11 +7,14 @@
 //
 
 import UIKit
+import GoogleSignIn
 
 class LoginViewController: UIViewController {
 
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
+    
+    var authUser: MUser?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,18 +22,38 @@ class LoginViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func signUpWithEmail(_ sender: UIButton) {
-        let auth = AuthServices()
-        auth.login(email: emailTextField.text,
+    @IBAction func signInWithEmail(_ sender: UIButton) {
+        
+        AuthServices.shared.login(email: emailTextField.text,
                    password: passwordTextField.text) { (result) in
                     switch result {
-                        
                     case .success(let user):
-                        self.showAlert(with: "Success", message: "Authorisation completed!")
+                        FirestoreService.shared.getUserData(user: user) { (result) in
+                            switch result {
+                                
+                            case .success(let user):
+                                self.authUser = user
+                                self.performSegue(withIdentifier: "emailLogin", sender: nil)
+                            case .failure(let error):
+                                self.showAlert(with: "Error", message: error.localizedDescription)
+                            }
+                        }
                     case .failure(let error):
                         self.showAlert(with: "Error", message: error.localizedDescription)
                     }
         }
+    }
+    
+    @IBAction func signUpGoogle(_ sender: UIButton) {
+        GIDSignIn.sharedInstance()?.presentingViewController = self
+        GIDSignIn.sharedInstance().signIn()
+        performSegue(withIdentifier: "googleLogin", sender: nil)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let vc = segue.destination as! UINavigationController
+        let chatVC = vc.topViewController as! ChatsViewController
+        chatVC.currentUser = authUser
     }
     
     /*
@@ -45,7 +68,7 @@ class LoginViewController: UIViewController {
 
 }
 
-extension LoginViewController{
+extension LoginViewController {
     func showAlert(with title: String,message: String){
         let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
         let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)

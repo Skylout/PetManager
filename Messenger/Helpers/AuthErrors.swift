@@ -15,6 +15,8 @@ enum AuthError {
     case passwordsNotMatched
     case unknownError
     case serverError
+    case cannotGetUser
+    case cannorUnwrapUser
 }
 
 extension AuthError: LocalizedError{
@@ -33,6 +35,10 @@ extension AuthError: LocalizedError{
             return NSLocalizedString("Unknown error", comment: "")
         case .serverError:
             return NSLocalizedString("Server error", comment: "")
+        case .cannotGetUser:
+            return NSLocalizedString("Cannot get user", comment: "")
+        case .cannorUnwrapUser:
+            return NSLocalizedString("Cannot unwrap user", comment: "")
         }
     }
 }

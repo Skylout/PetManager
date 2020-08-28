@@ -9,13 +9,26 @@
 import Foundation
 
 class Validators {
-    static func isFilled (email: String?, password: String?, confirmPassword: String?) -> Bool{
+    static func isFilled (email: String?, name: String?, password: String?, confirmPassword: String?) -> Bool{
         guard let password = password,
             let confirmPassword = confirmPassword,
             let email = email,
+            let name = name,
             password != "",
             confirmPassword != "",
-            email != ""
+            email != "",
+            name != ""
+            else {
+                return false
+        }
+        return true
+    }
+    
+    static func isFilled (email: String?, name: String?) -> Bool{
+        guard let email = email,
+            let name = name,
+            email != "",
+            name != ""
             else {
                 return false
         }
