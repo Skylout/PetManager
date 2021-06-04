@@ -8,10 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		17292B13EF8E54E539EBBB03 /* Pods_Messenger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52F7E9B9EFEBD64ED268E4D4 /* Pods_Messenger.framework */; };
+		B31C093F24FD890C00B9E839 /* GetTopVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31C093E24FD890C00B9E839 /* GetTopVC.swift */; };
+		B31C094324FD9DDB00B9E839 /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31C094224FD9DDB00B9E839 /* Alerts.swift */; };
+		B31C094524FDBEB400B9E839 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31C094424FDBEB400B9E839 /* MessageViewController.swift */; };
+		B31C094724FDC48700B9E839 /* MSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31C094624FDC48700B9E839 /* MSender.swift */; };
 		B3315BE224F1F578001CF49B /* ChatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3315BE124F1F578001CF49B /* ChatsViewController.swift */; };
 		B341900A24E718D400823790 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B341900924E718D400823790 /* LoginViewController.swift */; };
 		B341900E24E71B6400823790 /* AuthentificationServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = B341900D24E71B6400823790 /* AuthentificationServices.swift */; };
 		B341901224E7482500823790 /* Validators.swift in Sources */ = {isa = PBXBuildFile; fileRef = B341901124E7482500823790 /* Validators.swift */; };
+		B34762A324F8B3980051CF88 /* ListenerServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34762A224F8B3980051CF88 /* ListenerServices.swift */; };
+		B34762A624F9A26B0051CF88 /* ChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34762A524F9A26B0051CF88 /* ChatTableViewCell.swift */; };
+		B34762A824F9AC4D0051CF88 /* MChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34762A724F9AC4D0051CF88 /* MChat.swift */; };
+		B34762AA24F9B0AE0051CF88 /* MMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34762A924F9B0AE0051CF88 /* MMessage.swift */; };
 		B35ABA0A24D4D2320046B1C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35ABA0924D4D2320046B1C2 /* AppDelegate.swift */; };
 		B35ABA0C24D4D2320046B1C2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35ABA0B24D4D2320046B1C2 /* SceneDelegate.swift */; };
 		B35ABA0E24D4D2320046B1C2 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35ABA0D24D4D2320046B1C2 /* AuthViewController.swift */; };
@@ -27,10 +35,18 @@
 
 /* Begin PBXFileReference section */
 		52F7E9B9EFEBD64ED268E4D4 /* Pods_Messenger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Messenger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B31C093E24FD890C00B9E839 /* GetTopVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTopVC.swift; sourceTree = "<group>"; };
+		B31C094224FD9DDB00B9E839 /* Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alerts.swift; sourceTree = "<group>"; };
+		B31C094424FDBEB400B9E839 /* MessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
+		B31C094624FDC48700B9E839 /* MSender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSender.swift; sourceTree = "<group>"; };
 		B3315BE124F1F578001CF49B /* ChatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsViewController.swift; sourceTree = "<group>"; };
 		B341900924E718D400823790 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B341900D24E71B6400823790 /* AuthentificationServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthentificationServices.swift; sourceTree = "<group>"; };
 		B341901124E7482500823790 /* Validators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validators.swift; sourceTree = "<group>"; };
+		B34762A224F8B3980051CF88 /* ListenerServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListenerServices.swift; sourceTree = "<group>"; };
+		B34762A524F9A26B0051CF88 /* ChatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTableViewCell.swift; sourceTree = "<group>"; };
+		B34762A724F9AC4D0051CF88 /* MChat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MChat.swift; sourceTree = "<group>"; };
+		B34762A924F9B0AE0051CF88 /* MMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMessage.swift; sourceTree = "<group>"; };
 		B35ABA0624D4D2320046B1C2 /* Messenger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Messenger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B35ABA0924D4D2320046B1C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B35ABA0B24D4D2320046B1C2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -68,6 +84,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		B31C093D24FD88BB00B9E839 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B31C093E24FD890C00B9E839 /* GetTopVC.swift */,
+				B31C094224FD9DDB00B9E839 /* Alerts.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		B341900B24E71B2200823790 /* VC */ = {
 			isa = PBXGroup;
 			children = (
@@ -75,6 +100,7 @@
 				B362782E24D4E883009B0CE7 /* RegistrationViewController.swift */,
 				B341900924E718D400823790 /* LoginViewController.swift */,
 				B3315BE124F1F578001CF49B /* ChatsViewController.swift */,
+				B31C094424FDBEB400B9E839 /* MessageViewController.swift */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -84,8 +110,17 @@
 			children = (
 				B341900D24E71B6400823790 /* AuthentificationServices.swift */,
 				B381E81724EDE4DB001AC878 /* FirestoreService.swift */,
+				B34762A224F8B3980051CF88 /* ListenerServices.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		B34762A424F9A23B0051CF88 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				B34762A524F9A26B0051CF88 /* ChatTableViewCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		B35AB9FD24D4D2320046B1C2 = {
@@ -111,9 +146,11 @@
 			children = (
 				B35ABA0924D4D2320046B1C2 /* AppDelegate.swift */,
 				B35ABA0B24D4D2320046B1C2 /* SceneDelegate.swift */,
+				B31C093D24FD88BB00B9E839 /* Extensions */,
 				B341900C24E71B3D00823790 /* Services */,
 				B341900B24E71B2200823790 /* VC */,
 				B381E81B24EDEF56001AC878 /* Models */,
+				B34762A424F9A23B0051CF88 /* Cell */,
 				B38B3B6024ECA40D00CA7AD8 /* Helpers */,
 				B35ABA0F24D4D2320046B1C2 /* Main.storyboard */,
 				B35ABA1224D4D2350046B1C2 /* Assets.xcassets */,
@@ -127,7 +164,10 @@
 		B381E81B24EDEF56001AC878 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				B34762A724F9AC4D0051CF88 /* MChat.swift */,
 				B381E81924EDEE2C001AC878 /* MUser.swift */,
+				B34762A924F9B0AE0051CF88 /* MMessage.swift */,
+				B31C094624FDC48700B9E839 /* MSender.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -285,16 +325,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				B35ABA0E24D4D2320046B1C2 /* AuthViewController.swift in Sources */,
+				B31C094724FDC48700B9E839 /* MSender.swift in Sources */,
 				B341901224E7482500823790 /* Validators.swift in Sources */,
+				B34762AA24F9B0AE0051CF88 /* MMessage.swift in Sources */,
 				B38B3B5F24EC9AC300CA7AD8 /* AuthErrors.swift in Sources */,
+				B34762A324F8B3980051CF88 /* ListenerServices.swift in Sources */,
+				B31C093F24FD890C00B9E839 /* GetTopVC.swift in Sources */,
 				B35ABA0A24D4D2320046B1C2 /* AppDelegate.swift in Sources */,
 				B362782F24D4E883009B0CE7 /* RegistrationViewController.swift in Sources */,
 				B341900A24E718D400823790 /* LoginViewController.swift in Sources */,
 				B3315BE224F1F578001CF49B /* ChatsViewController.swift in Sources */,
+				B31C094524FDBEB400B9E839 /* MessageViewController.swift in Sources */,
+				B31C094324FD9DDB00B9E839 /* Alerts.swift in Sources */,
 				B341900E24E71B6400823790 /* AuthentificationServices.swift in Sources */,
 				B381E81824EDE4DB001AC878 /* FirestoreService.swift in Sources */,
 				B381E81A24EDEE2C001AC878 /* MUser.swift in Sources */,
+				B34762A624F9A26B0051CF88 /* ChatTableViewCell.swift in Sources */,
 				B35ABA0C24D4D2320046B1C2 /* SceneDelegate.swift in Sources */,
+				B34762A824F9AC4D0051CF88 /* MChat.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

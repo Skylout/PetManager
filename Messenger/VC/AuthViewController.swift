@@ -20,9 +20,11 @@ class AuthViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let vc = segue.destination as! UINavigationController
-        let chatVC = vc.topViewController as! ChatsViewController
-        chatVC.currentUser = authUser
+        if segue.identifier == "googleSignUp" {
+            let vc = segue.destination as! UINavigationController
+            let chatVC = vc.topViewController as! ChatsViewController
+            chatVC.currentUser = authUser
+        }
     }
     
     //Использую вместо доступной кнопки GIDSignInButton свою. 
@@ -67,13 +69,4 @@ extension AuthViewController: GIDSignInDelegate {
         }
     }
     
-}
-
-extension AuthViewController {
-    func showAlert(with title: String,message: String){
-        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
-        alertController.addAction(okAction)
-        present(alertController, animated: true, completion: nil)
-    }
 }

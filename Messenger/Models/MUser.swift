@@ -31,8 +31,19 @@ struct MUser: Hashable, Decodable {
         self.id = id
     }
     
+    init?(document: QueryDocumentSnapshot) {
+        let data = document.data()
+        guard let username = data["username"] as? String,
+        let email = data["email"] as? String,
+        let id = data["uid"] as? String else { return nil }
+        
+        self.username = username
+        self.email = email
+        self.id = id
+    }
+    
     var representation: [String: Any] {
-        var rep = ["username":username]
+        var rep: [String: Any] = ["username":username]
         rep["email"] = email
         rep["uid"] = id
         return rep
